@@ -1,0 +1,18 @@
+[
+    {
+        "ID": "LC-101",
+        "Titulo": "Cien años de soledad",
+        "Autor": "Gabo",
+        "Categoria": "colombiano",
+        "Cantidad": 1,
+        "Ubicacion": "A-101"
+    },
+    {
+        "ID": "lC-101",
+        "Titulo": "SI",
+        "Autor": "GAS",
+        "Categoria": "lol",
+        "Cantidad": 1,
+        "Ubicacion": "B-2"
+    }
+]
