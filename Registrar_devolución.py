@@ -1,15 +1,20 @@
-import json
+from Registrar_item import cargar_datos, guardar_datos
 def devolucion():
- codigo=input("Ingrese el codigo del producto: ")
- for producto in inventario:
-    if producto["codigo"]==codigo:
-        cantidad=int(input("ingrese la cuantos productos desea devolver: "))
-        producto["cantidad"]+=cantidad
-        print("Devolucion realizado con exito")
-        with open("inventario.json", "w") as archivo:
-            json.dump(inventario, archivo, indent=4)
-        break
+    items = cargar_datos()
+    codigo = input("Ingrese el ID del producto: ").strip()
+    for producto in items:
+        if producto["ID"] == codigo:
+            print(f"Producto encontrado: {producto['Titulo']}")
+            cantidad = int(input("Ingrese cuantos productos desea devolver: "))
+            if cantidad > 0:
+                producto["Cantidad"] += cantidad
+                guardar_datos(items)
+                print("Devolucion realizada con exito")
+            else:
+                print("La cantidad debe ser mayor que cero")
+            break
     else:
+
         print("Producto no encontrado")
 
 
