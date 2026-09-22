@@ -23,14 +23,14 @@ def buscar(): #Comenzamos la funcionalidad de buscar
         resultados= [item for item in inventario if modo in str(item.get("Titulo" ,""))]
     elif opcion == "3":
         modo = input("Ingresa la categoria: ")
-        resultados = [item for item in inventario if modo in str(item.het("Categoria",""))]
+        resultados = [item for item in inventario if modo in str(item.get("Categoria",""))]
     else:
         print("Opcion no valida")
         return
     if resultados:
         print(f"encontramos {len(resultados)} resultados: ") #Un pequeño resumen de lo que encontramos en la busquedad
         for item in resultados:
-            print(f"ID: {item.get("ID")} | Titulo: {item.get("Titulo")} | Autor: {item.get("Autor")}")
+            print(f"ID: {item.get('ID')} | Titulo: {item.get('Titulo')} | Autor: {item.get('Autor')}")
     else:
         print("No se encontraron ninguno")    
         
