@@ -4,6 +4,7 @@ print("========================================")
 print("Bienvenido a la Biblioteca Comunitaria Horizonte ")
 print("========================================")
 while True:
+    print("========================================")
     print("1. Registrar ítem\n2. Listar ítems\n3. Buscar ítem\n4. Registrar préstamo\n5. Registrar Devolucion\n6.Salir")
     opcion = int(input("Ingresa la opción que deseas ejecutar: "))
     if opcion == 1:
