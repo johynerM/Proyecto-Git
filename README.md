@@ -192,6 +192,6 @@ Aqui se evidencia cada commit que se fue enviando a traves de los dias y los col
 ## Contribuyentes 
 - Johyner Martinez (Lider), 
 - Juan Sebastian Sierra(contribuyente), 
-- Sebastian Rojas (contribuyente), 
+- Santiago Rojas (contribuyente), 
 - Juan Diego Velandia (contribuyente).
 
